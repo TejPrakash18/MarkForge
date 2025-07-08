@@ -8,10 +8,6 @@ import { motion, AnimatePresence } from "framer-motion";
 const EditorPanel = () => {
   const [note, setNote] = useState(
     `# Welcome to MarkForge
-
-You can insert images like this:
-
-![OpenAI Logo](https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg)
 `
   );
   const [previewMode, setPreviewMode] = useState("live");
