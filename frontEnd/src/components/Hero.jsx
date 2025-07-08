@@ -2,6 +2,7 @@ import React from "react";
 import { HiExternalLink } from "react-icons/hi";
 import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -43,13 +44,14 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
-            <a
-              href="#"
+            <Link to="/editor">
+            <button
               className="group bg-[#282828] text-white px-8 py-3 rounded-xl font-semibold shadow-md hover:shadow-lg flex items-center space-x-2 transition"
             >
               <span>Get Started</span>
               <HiExternalLink className="text-lg group-hover:text-gray-300" />
-            </a>
+            </button>
+            </Link>
 
             <button className="bg-white text-gray-700 px-8 py-3 rounded-xl font-semibold border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition shadow-sm">
               View Demo
